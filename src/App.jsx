@@ -1,19 +1,7 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Courses from "./components/Courses";
-import WhyChooseUs from "./components/WhyChooseUs";
-import Footer from "./components/Footer";
+import FitnessPage from "./pages/FitnessPage";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <Courses />
-      <WhyChooseUs />
-      <Footer />
-    </>
-  );
+  return <FitnessPage />;
 }
 
 export default App;

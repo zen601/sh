@@ -1,52 +1,75 @@
-export const features = [
-  {
-    icon: "",
-    title: "Find out what you need",
-    description: "We present you a proposal and discuss nitty-gritty like",
-  },
-  {
-    icon: "⚙️",
-    title: "Work out the details",
-    description: "Communication protocols apart from engagement models",
-  },
-  {
-    icon: "🚀",
-    title: "We get to work fast",
-    description: "Protocols apart from engage models, pricing billing",
-  },
-];
-import { BsStack } from "react-icons/bs";
-import { HiLightBulb } from "react-icons/hi";
-import { FiSettings } from "react-icons/fi";
-import { BiTime } from "react-icons/bi";
+import AlexMorgan from "../assets/AlexMorgan.avif";
+import SophieLee from "../assets/SophieLee.avif";
+import introImage from "../assets/introImage.avif";
 
-export const services = [
+export const menuLinks = [
+  { name: "Home", href: "#home" },
+  { name: "Programs", href: "#programs" },
+  { name: "Trainers", href: "#trainers" },
+  { name: "Pricing", href: "#pricing" },
+  { name: "Contact", href: "#contact" },
+];
+
+export const heroContent = {
+  tag: "Train smarter",
+  title: "Transform your body with daily fitness programs",
+  description:
+    "Join powerful workout sessions, expert trainers, and flexible plans designed for beginners and advanced members.",
+  primaryButton: "Start Today",
+  secondaryButton: "View Plans",
+  image: introImage,
+};
+
+export const programs = [
   {
-    icon: <BsStack className="w-8 h-8 text-indigo-600" />,
-    title: "Web Design",
-    description: "One for all and all for one, Muskehounds are always ready.",
-    link: "#learn-more",
+    title: "Strength Training",
+    description: "Build muscle and improve your full body strength.",
+    icon: "🏋️",
   },
   {
-    icon: <HiLightBulb className="w-8 h-8 text-amber-400" />,
-    title: "Ad-Creatives",
-    description: "Alphabet Village and the subline of her own road.",
-    link: "#learn-more",
+    title: "Yoga Class",
+    description: "Increase flexibility and relax your mind and body.",
+    icon: "🧘",
   },
   {
-    icon: <FiSettings className="w-8 h-8 text-red-400" />,
-    title: "Automation",
-    description: "Little Blind Text should turn around and return.",
-    link: "#learn-more",
-  },
-  {
-    icon: <BiTime className="w-8 h-8 text-cyan-400" />,
-    title: "Infographics",
-    description: "Nothing the copy said could convince her.",
-    link: "#learn-more",
+    title: "Cardio Workout",
+    description: "Boost endurance and improve heart health.",
+    icon: "🏃",
   },
 ];
-export const footerLinks = {
-  
-  
-};
+
+export const trainers = [
+  {
+    name: "Alex Morgan",
+    specialty: "Strength Coach",
+    image: AlexMorgan,
+  },
+  {
+    name: "Sophie Lee",
+    specialty: "Yoga Trainer",
+    image: SophieLee,
+  },
+];
+
+export const pricingPlans = [
+  {
+    name: "Basic",
+    price: "$19",
+    period: "/month",
+    features: ["Gym Access", "1 Group Class", "Basic Support"],
+  },
+  {
+    name: "Pro",
+    price: "$39",
+    period: "/month",
+    features: ["All Classes", "Personal Guidance", "Priority Support"],
+  },
+  {
+    name: "Elite",
+    price: "$59",
+    period: "/month",
+    features: ["Unlimited Access", "Private Coaching", "Nutrition Tips"],
+  },
+];
+
+export const footerItems = ["About", "Classes", "Membership", "Support"];
